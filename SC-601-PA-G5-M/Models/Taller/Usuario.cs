@@ -23,5 +23,9 @@ namespace SC_601_PA_G5_M.Models.Taller
         [Required(ErrorMessage = "El telefono es obligatorio")]
         [StringLength(50)]
         public string Telefono { get; set; }
+
+        [Required(ErrorMessage = "El rol es obligatorio")]
+        [StringLength(50)]
+        public string Rol { get; set; }
     }
 }
