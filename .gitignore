@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/SC-601-PA-G5-M/Global.asax
+/SC-601-PA-G5-M/Global.asax.cs
+/SC-601-PA-G5-M/packages.config
+/SC-601-PA-G5-M/Web.config
+/SC-601-PA-G5-M/Web.Debug.config
+/SC-601-PA-G5-M/Web.Release.config
