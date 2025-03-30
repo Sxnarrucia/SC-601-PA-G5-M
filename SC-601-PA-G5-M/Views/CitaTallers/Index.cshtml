@@ -1,28 +1,28 @@
 ﻿@model IEnumerable<SC_601_PA_G5_M.Models.Taller.CitaTaller>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Servicio Taller";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Taller Moto Llantas Virtual</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agendar Cita", "Create", null, new { @class = "btn btn-primary" })
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Usuario.Nombre)
+            <i class="fa-regular fa-user"></i> @Html.DisplayNameFor(model => model.Usuario.Nombre) 
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaCita)
+            <i class="fa-regular fa-calendar"></i> @Html.DisplayNameFor(model => model.FechaCita) 
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DescripcionServicio)
+            <i class="fa-regular fa-comments"></i> @Html.DisplayNameFor(model => model.DescripcionServicio) 
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.EstadoCita)
+            <i class="fa-regular fa-comment"></i> @Html.DisplayNameFor(model => model.EstadoCita) 
         </th>
         <th></th>
     </tr>
@@ -42,9 +42,9 @@
             @Html.DisplayFor(modelItem => item.EstadoCita)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdCita }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdCita }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdCita })
+            @Html.ActionLink("Editar", "Edit", new { id=item.IdCita }, new { @class = "btn btn-info" }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.IdCita }, new { @class = "btn btn-dark" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IdCita }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

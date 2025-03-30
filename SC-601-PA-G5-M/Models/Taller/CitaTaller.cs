@@ -17,15 +17,19 @@ namespace SC_601_PA_G5_M.Models.Taller
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
 
-        [DataType(DataType.Time)]
+
+        [DataType(DataType.DateTime)]
         [Display(Name = "Fecha de la cita")]
         public DateTime FechaCita { get; set; }
 
+
         [Required(ErrorMessage = "La descripcion del servicio es obligatorio")]
+        [Display(Name = "Descripción Servicio")]
         [StringLength(100)]
         public string DescripcionServicio { get; set; }
 
         [Required(ErrorMessage = "El estado de la cita es obligatorio")]
+        [Display(Name = "Estado de la cita")]
         [StringLength(50)]
         public string EstadoCita { get; set; }
     }
